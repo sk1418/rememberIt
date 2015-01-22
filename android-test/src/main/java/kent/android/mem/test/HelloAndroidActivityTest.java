@@ -1,0 +1,17 @@
+package kent.android.mem.test;
+
+import android.test.ActivityInstrumentationTestCase2;
+import kent.android.mem.*;
+
+public class HelloAndroidActivityTest extends ActivityInstrumentationTestCase2<HelloAndroidActivity> {
+
+    public HelloAndroidActivityTest() {
+        super(HelloAndroidActivity.class);
+    }
+
+    public void testActivity() {
+        HelloAndroidActivity activity = getActivity();
+        assertNotNull(activity);
+    }
+}
+
