@@ -11,9 +11,13 @@ public enum GameLevel {
     Expert(true, true, true, 99),
     Master(false, false, false, 999);
 
+    //if numbers are only sequence number from 1
     private boolean sequenceNumOnly;
+    //if provide number candidate when user tries to resolve the challenge
     private boolean provideCandidates;
+    //
     private boolean provideNumOption;
+    //max number could be used by challenge
     private int maxNum;
 
     GameLevel(boolean sequenceNumOnly, boolean provideCandidates, boolean provideNumOption, int maxNum) {
