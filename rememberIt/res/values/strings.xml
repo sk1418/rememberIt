@@ -2,4 +2,10 @@
 <resources>
     <string name="hello">Hello mem!</string>
     <string name="app_name">mem</string>
+    <string name="btn_info">How to play</string>
+    <string name="lvl_p">Practice</string>
+    <string name="lvl_e">Easy</string>
+    <string name="lvl_n">Normal</string>
+    <string name="lvl_x">Expert</string>
+    <string name="lvl_m">Master</string>
 </resources>

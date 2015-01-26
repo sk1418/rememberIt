@@ -14,11 +14,18 @@ public class Challenge {
     private int length = 3;
     private String[][] original;
     private String[][] answer;
+    private long duration;
 
 
+    /**
+     *
+     * @param level GameLevel
+     * @param length the length of the challenge matrix e.g. length =3 for a 3x3 matrix
+     */
     public Challenge(GameLevel level, int length) {
         this.level = level;
         this.length = length;
+        //generate the number matrix
         generateOrignalMatrix();
     }
 
@@ -27,6 +34,9 @@ public class Challenge {
         return Arrays.equals(original, answer);
     }
 
+    /**
+     * generate random numbers and fill original matrix
+     */
     private void generateOrignalMatrix() {
         int max = level.isSequenceNumOnly() ? length * length : level.getMaxNum();
         List<Integer> candidates = Lists.newArrayList();
@@ -41,7 +51,7 @@ public class Challenge {
 
             for (int i = 1; i <= length * length; i++) {
                 int random = r.nextInt(max - 1) + 1;
-                candidates.add(i);
+                candidates.add(random);
             }
         }
 
@@ -56,10 +66,19 @@ public class Challenge {
             }
         }
 
+
     }
 
 
     public String[][] getOriginal() {
         return original;
+    }
+
+    public void setAnswer(String[][] answer) {
+        this.answer = answer;
+    }
+
+    public void setDuration(long duration) {
+        this.duration = duration;
     }
 }

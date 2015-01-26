@@ -7,8 +7,8 @@ package kent.android.mem.challenge;
 public enum GameLevel {
     Practice(true, true, true, 99),
     Easy(true, true, true, 99),
-    Normal(true, true, true, 99),
-    Expert(true, true, true, 99),
+    Normal(false, true, true, 99),
+    Expert(false, false, true, 99),
     Master(false, false, false, 999);
 
     //if numbers are only sequence number from 1
