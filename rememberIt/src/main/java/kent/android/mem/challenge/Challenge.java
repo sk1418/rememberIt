@@ -1,14 +1,8 @@
 package kent.android.mem.challenge;
 
-import java.util.Collections;
-import java.util.Iterator;
-import java.util.List;
-import java.util.Random;
-
-import com.google.common.collect.Iterables;
-import com.google.common.collect.Iterators;
 import com.google.common.collect.Lists;
-import com.google.common.collect.Range;
+
+import java.util.*;
 
 /**
  * @author: Kent
@@ -28,8 +22,13 @@ public class Challenge {
         generateOrignalMatrix();
     }
 
+    public boolean checkAnswer() {
+        assert answer != null;
+        return Arrays.equals(original, answer);
+    }
+
     private void generateOrignalMatrix() {
-        int max = level.isSequenceNumOnly()?length*length:level.getMaxNum();
+        int max = level.isSequenceNumOnly() ? length * length : level.getMaxNum();
         List<Integer> candidates = Lists.newArrayList();
 
         //get number list
@@ -37,24 +36,30 @@ public class Challenge {
             for (int i = 1; i <= length * length; i++) {
                 candidates.add(i);
             }
-        }
-        else {
+        } else {
             Random r = new Random();
 
-			for (int i = 1; i <= length * length; i++) {
+            for (int i = 1; i <= length * length; i++) {
                 int random = r.nextInt(max - 1) + 1;
                 candidates.add(i);
             }
         }
 
         //fill the matrix
-        Collections.shuffle(candidates, new Random() );
+        Collections.shuffle(candidates, new Random());
         Iterator<Integer> it = candidates.iterator();
+        original = new String[length][length];
+
         for (int i = 0; i < length; i++) {
             for (int j = 0; j < length; j++) {
-               original[i][j]  = String.valueOf( it.next());
+                original[i][j] = String.valueOf(it.next());
             }
         }
 
+    }
+
+
+    public String[][] getOriginal() {
+        return original;
     }
 }
