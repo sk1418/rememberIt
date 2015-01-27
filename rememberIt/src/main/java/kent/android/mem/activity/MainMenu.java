@@ -1,8 +1,10 @@
 package kent.android.mem.activity;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
 import kent.android.mem.R;
 
 /**
@@ -25,4 +27,9 @@ public class MainMenu extends Activity {
         setContentView(R.layout.main);
     }
 
+
+    public void showHowToScreen(View view) {
+        Intent i = new Intent(getApplicationContext(), HowToActivity.class);
+        startActivity(i);
+    }
 }
