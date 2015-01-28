@@ -5,25 +5,22 @@ package kent.android.mem.challenge;
  * Created on 2015-01-22.
  */
 public enum GameLevel {
-    Practice(true, true, true, 99),
-    Easy(true, true, true, 99),
-    Normal(false, true, true, 99),
-    Expert(false, false, true, 99),
-    Master(false, false, false, 999);
+    Practice(true, true, 99),
+    Easy(true, true, 99),
+    Normal(false, true, 99),
+    Expert(false, false, 99),
+    Master(false, false, 999);
 
     //if numbers are only sequence number from 1
     private boolean sequenceNumOnly;
     //if provide number candidate when user tries to resolve the challenge
     private boolean provideCandidates;
-    //
-    private boolean provideNumOption;
     //max number could be used by challenge
     private int maxNum;
 
-    GameLevel(boolean sequenceNumOnly, boolean provideCandidates, boolean provideNumOption, int maxNum) {
+    GameLevel(boolean sequenceNumOnly, boolean provideCandidates, int maxNum) {
         this.sequenceNumOnly = sequenceNumOnly;
         this.provideCandidates = provideCandidates;
-        this.provideNumOption = provideNumOption;
         this.maxNum = maxNum;
     }
 
@@ -45,14 +42,6 @@ public enum GameLevel {
             this.provideCandidates = provideCandidates;
     }
 
-    public boolean isProvideNumOption() {
-        return provideNumOption;
-    }
-
-    public void setProvideNumOption(boolean provideNumOption) {
-        if (this == Practice)
-            this.provideNumOption = provideNumOption;
-    }
 
     public int getMaxNum() {
         return maxNum;

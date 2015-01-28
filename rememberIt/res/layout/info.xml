@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent" android:gravity="left" android:weightSum="1">
+
+    <TextView style="@style/h1Label" android:id="@+id/title" android:text="@string/app_name"/>
+    <TextView style="@style/infoText" android:text="@string/info_mem" android:id="@+id/info_mem"/>
+    <TextView style="@style/h1Label" android:id="@+id/lbl_p" android:text="@string/lvl_p"/>
+    <TextView style="@style/infoText" android:text="@string/info_p" android:id="@+id/info_p"/>
+    <TextView style="@style/h1Label" android:id="@+id/lbl_e" android:text="@string/lvl_e"/>
+    <TextView style="@style/infoText" android:text="@string/info_e" android:id="@+id/info_e"/>
+    <TextView style="@style/h1Label" android:id="@+id/lbl_n" android:text="@string/lvl_n"/>
+    <TextView style="@style/infoText" android:text="@string/info_n" android:id="@+id/info_n"/>
+    <TextView style="@style/h1Label" android:id="@+id/lbl_x" android:text="@string/lvl_x"/>
+    <TextView style="@style/infoText" android:text="@string/info_x" android:id="@+id/info_x"/>
+    <TextView style="@style/h1Label" android:id="@+id/lbl_m" android:text="@string/lvl_m"/>
+    <TextView style="@style/infoText" android:text="@string/info_m" android:id="@+id/info_m"/>
+</LinearLayout>

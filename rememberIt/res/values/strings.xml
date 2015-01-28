@@ -1,11 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="hello">Hello mem!</string>
-    <string name="app_name">mem</string>
+    <string name="app_name">Mem It!</string>
     <string name="btn_info">How to play</string>
     <string name="lvl_p">Practice</string>
     <string name="lvl_e">Easy</string>
     <string name="lvl_n">Normal</string>
     <string name="lvl_x">Expert</string>
     <string name="lvl_m">Master</string>
+    <string name="info_mem">
+        You will be given a nxn (n is between [3,7]) matrix as challenge. You memorize the numbers
+        in the matrix as fast as possible then you click the "Got it" button,
+        and try to restore the matrix. In same level, only if you finish kxk matrix 3 times, you can get (k+1)x(k+1) matrix challenge.
+    </string>
+    <string name="info_p">
+        In Practice mode you can set all challenge options.
+    </string>
+    <string name="info_e">
+        Numbers in matrix will be always sequence number from 1 to nxn. Candidates would be suggested when you restore the matrix.
+    </string>
+    <string name="info_n">
+        Numbers in matrix will be random number from 1 to 99. Candidates would be suggested when you restore the matrix.
+    </string>
+    <string name="info_x">
+        Numbers in matrix will be random number from 1 to 99. When you restore the matrix, you have to fill the matrix on your own, without suggestion.
+    </string>
+    <string name="info_m">
+        Numbers in matrix will be random number from 1 to 999. When you restore the matrix, you have to fill the matrix on your own, without suggestion.
+    </string>
 </resources>

@@ -9,7 +9,7 @@ import kent.android.mem.R;
  * @author: Kent
  * Created on 2015-01-27.
  */
-public class HowToActivity  extends Activity{
+public class HowToActivity extends Activity{
     private static String TAG = "HowTo";
     @Override
     public void onCreate(Bundle savedInstanceState) {
