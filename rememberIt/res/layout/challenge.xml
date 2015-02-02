@@ -5,13 +5,50 @@
               android:layout_height="fill_parent"
               android:gravity="center_horizontal">
 
-    <TextView
+    <LinearLayout
+            android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="36dp"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="Memorize it!"
-            android:id="@+id/logo" android:textStyle="bold"
-            android:layout_gravity="bottom|center_horizontal"/>
+            android:layout_height="wrap_content" >
+        <TextView
+                android:layout_width="0dp"
+                android:layout_height="36dp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/time"
+                android:id="@+id/Timing" android:textStyle="bold"
+                android:layout_weight="1.0" android:gravity="right"/>
+        <TextView
+                android:layout_width="0dp"
+                android:layout_height="36dp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text=""
+                android:id="@+id/elapsed" android:layout_weight="1.0" android:textColor="#9e3d3a"/>
+    </LinearLayout>
+    <TableLayout
+            android:id="@+id/challengeTableLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Medium Text"
+                    android:id="@+id/textView" android:layout_column="1"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:textAppearance="?android:attr/textAppearanceMedium" android:text="Medium Text"
+                      android:id="@+id/textView2" android:layout_column="1"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:textAppearance="?android:attr/textAppearanceMedium" android:text="Medium Text"
+                      android:id="@+id/textView3" android:layout_column="1"/>
+        </TableRow>
+    </TableLayout>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+    </LinearLayout>
 
 
 </LinearLayout>

@@ -81,4 +81,8 @@ public class Challenge {
     public void setDuration(long duration) {
         this.duration = duration;
     }
+
+    public int getLength() {
+        return length;
+    }
 }

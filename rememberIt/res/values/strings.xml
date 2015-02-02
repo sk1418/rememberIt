@@ -8,6 +8,7 @@
     <string name="lvl_n">Normal</string>
     <string name="lvl_x">Expert</string>
     <string name="lvl_m">Master</string>
+    <string name="time">Time:\u00a0\u00a0\u00a0</string>
     <string name="info_mem">
         You will be given a nxn (n is between [3,7]) matrix as challenge. You memorize the numbers
         in the matrix as fast as possible then you click the "Got it" button,
