@@ -11,6 +11,8 @@
     </activity>
      <activity android:name=".activity.HowToActivity">
     </activity>
+	  <activity android:name=".activity.ChallengeActivity">
+	  </activity>
   </application>
 
 </manifest>

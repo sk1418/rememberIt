@@ -24,7 +24,8 @@
 
     <Button style="@style/menuButton"
             android:text="@string/lvl_e"
-            android:id="@+id/btnLvlE"/>
+            android:id="@+id/btnLvlE"
+	android:onClick="showEasyScreen"/>
 
     <Button style="@style/menuButton"
             android:text="@string/lvl_n"

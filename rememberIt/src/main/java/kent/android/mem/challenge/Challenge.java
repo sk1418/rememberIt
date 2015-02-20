@@ -2,6 +2,7 @@ package kent.android.mem.challenge;
 
 import com.google.common.collect.Lists;
 
+import java.io.Serializable;
 import java.util.*;
 
 /**
@@ -9,7 +10,8 @@ import java.util.*;
  * Created on 2015-01-22.
  */
 
-public class Challenge {
+public class Challenge implements Serializable{
+
     private GameLevel level;
     private int length = 3;
     private String[][] original;

@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import kent.android.mem.R;
+import kent.android.mem.challenge.Challenge;
+import kent.android.mem.challenge.GameLevel;
 
 /**
  * @author: Kent
@@ -32,4 +34,17 @@ public class MainMenu extends Activity {
         Intent i = new Intent(getApplicationContext(), HowToActivity.class);
         startActivity(i);
     }
+
+	/**
+	 * this method is here for now just for testing
+	 * @param view
+	 */
+	public void showEasyScreen(View view) {
+		Intent i = new Intent(getApplicationContext(), ChallengeActivity.class);
+		Challenge easy = new Challenge(GameLevel.Easy, 3);
+		Bundle bundle = new Bundle();
+		bundle.putSerializable("challenge", easy);
+		i.putExtras(bundle);
+		startActivity(i);
+	}
 }
