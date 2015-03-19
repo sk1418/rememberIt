@@ -2,6 +2,8 @@ package kent.android.mem.activity;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TableLayout;
 import android.widget.TableRow;
 import android.widget.TextView;
@@ -29,11 +31,12 @@ public class ChallengeActivity extends Activity {
 		for (int i = 0; i < challenge.getLength(); i++) {
 			TableRow row = new TableRow(this);
 			for (int j = 0; j < challenge.getLength(); j++) {
-				TextView cell = new TextView(this);
-				cell.setText(challenge.getOriginal()[i][j]);
-				row.addView(cell);
-			}
-			tableLayout.addView(row);
+                Button cell = new Button(this);
+                cell.setBackgroundResource(R.drawable.button);
+                cell.setText(challenge.getOriginal()[i][j]);
+                row.addView(cell);
+            }
+            tableLayout.addView(row);
 		}
 	}
 }

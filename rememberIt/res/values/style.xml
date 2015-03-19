@@ -12,6 +12,16 @@
         <item name="android:textSize">26sp</item>
         <item name="android:layout_gravity">center_horizontal</item>
     </style>
+    <style name="numButton">
+        <item name="android:layout_margin">10dp</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:layout_width">30dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/button</item>
+        <item name="android:text">@string/btn_info</item>
+        <item name="android:textSize">26sp</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+    </style>
 
     <style name="h1Label">
         <item name="android:layout_width">fill_parent</item>
